@@ -1,10 +1,11 @@
-import type { Metadata } from "next";
 import {
     Montserrat_Alternates,
     Cabin_Sketch,
     Chelsea_Market,
     Rubik_Doodle_Shadow,
 } from "next/font/google";
+import type { Metadata } from "next";
+import { Header } from "@/components";
 import "./globals.css";
 
 const montserratAlt = Montserrat_Alternates({
@@ -58,6 +59,7 @@ export default function RootLayout({
                   antialiased
                 `}
             >
+                <Header />
                 {children}
             </body>
         </html>

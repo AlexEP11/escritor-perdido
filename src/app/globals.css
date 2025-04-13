@@ -2,14 +2,15 @@
 
 @theme {
     --color-azul: #86e1e9;
-    --color-azul-bajo: #A1D2E5
+    --color-azul-bajo: #a1d2e5;
     --color-amarillo: #f9f871;
-    --color-mayonesa: #EDCD72
+    --color-mayonesa: #edcd72;
+    --color-mayonesa-bajo: #d1b35f;
     --color-lavanda: #d8bedc;
-    --color-morado: #9EA1D4
+    --color-morado: #9ea1d4;
     --color-celeste: #7aedda;
-    --color-verde: #90F7BB
-    --color-lima: #BFFB94
+    --color-verde: #90f7bb;
+    --color-lima: #bffb94;
 }
 
 @layer base {
