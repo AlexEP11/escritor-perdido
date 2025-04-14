@@ -4,7 +4,7 @@ import {
     Chelsea_Market,
     Rubik_Doodle_Shadow,
 } from "next/font/google";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Header } from "@/components";
 import "./globals.css";
 
@@ -41,15 +41,44 @@ export const metadata: Metadata = {
     description:
         "Descubre la ludoteca 'En Busca del Escritor Perdido', un espacio dedicado a fomentar la creatividad literaria a través de juegos y actividades interactivas.",
     icons: "/logo-ico.ico",
+    authors: [
+        { name: "Dalila del Toro Rodríguez" },
+        { name: "Diana Laura Moreno" },
+        { name: "Alejandro Estrada Ponce" },
+        { name: "Fernando Genaro Vizcaino Sanchez" },
+    ],
+    keywords: [
+        "ludoteca literaria",
+        "creatividad literaria",
+        "juegos literarios",
+        "escritura creativa",
+        "actividades literarias",
+    ],
+    category: "educación",
+    robots: {
+        index: true, // Permite a los buscadores indexar esta página
+        follow: true, // Permite a los buscadores seguir los enlaces de esta página
+        googleBot: {
+            index: true,
+            follow: true,
+            "max-image-preview": "large",
+            "max-snippet": -1,
+        },
+    },
 };
 
+export const viewport: Viewport = {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 5,
+};
 export default function RootLayout({
     children,
 }: Readonly<{
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en">
+        <html lang="es" suppressHydrationWarning>
             <body
                 className={`
                   ${montserratAlt.variable}
