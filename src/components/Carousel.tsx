@@ -31,7 +31,7 @@ export const Carousel = () => {
                                 alt={`Imagen ${index + 1}`}
                                 fill
                                 className="object-cover object-center"
-                                priority={index === 0}
+                                priority
                             />
                         </div>
                     ))}
