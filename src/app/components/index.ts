@@ -1,0 +1,1 @@
+export { WeAreSection } from "./WeAreSection";
