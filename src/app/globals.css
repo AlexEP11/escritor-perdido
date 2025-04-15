@@ -16,6 +16,7 @@
 @layer base {
     body {
         font-family: var(--font-montserrat-alt);
+        line-height: 2.1;
     }
 
     h1.title-cabin {
