@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { WeAreSection } from "./components";
+import { LiteraryCreationSection, WeAreSection } from "./components";
 
 export default function Home() {
     return (
@@ -12,6 +12,7 @@ export default function Home() {
                 height={100}
                 className="w-full h-48 object-cover"
             />
+            <LiteraryCreationSection />
         </>
     );
 }
