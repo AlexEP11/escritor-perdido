@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { LiteraryCreationSection, WeAreSection } from "./components";
+import { ProcessCreationSection } from "./components/ProcessCreationSection";
 
 export default function Home() {
     return (
@@ -13,6 +14,8 @@ export default function Home() {
                 className="w-full h-48 object-cover"
             />
             <LiteraryCreationSection />
+
+            <ProcessCreationSection />
         </>
     );
 }
