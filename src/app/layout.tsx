@@ -5,7 +5,7 @@ import {
     Rubik_Doodle_Shadow,
 } from "next/font/google";
 import type { Metadata, Viewport } from "next";
-import { Header } from "@/components";
+import { Footer, Header } from "@/components";
 import "./globals.css";
 
 const montserratAlt = Montserrat_Alternates({
@@ -90,6 +90,7 @@ export default function RootLayout({
             >
                 <Header />
                 {children}
+                <Footer />
             </body>
         </html>
     );
