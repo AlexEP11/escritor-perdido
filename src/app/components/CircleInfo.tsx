@@ -2,9 +2,10 @@
 
 import Image from "next/image";
 import { Circle } from "./Circle";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { CircleInfoI } from "../types";
 import { CircleModal } from "./CircleModal";
+import { AnimatePresence, motion, useInView } from "framer-motion";
 
 export const CircleInfo = ({
     path,
@@ -14,8 +15,21 @@ export const CircleInfo = ({
 }: CircleInfoI) => {
     const [click, setClick] = useState<boolean | null>(null);
 
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true, margin: "-50px" });
+
     return (
-        <div className="flex flex-col items-center">
+        <motion.div
+            ref={ref}
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={isInView ? { opacity: 1, scale: 1 } : {}}
+            transition={{
+                duration: 0.5,
+                type: "spring",
+                bounce: 0.4,
+            }}
+            className="flex flex-col items-center"
+        >
             <p className="text-center text-sm font-bold mb-2 max-w-[140px]">
                 {title}
             </p>
@@ -25,7 +39,7 @@ export const CircleInfo = ({
             >
                 <Circle color={color} />
                 {path && (
-                    <div className="absolute inset-0 flex items-center justify-center  hover:scale-125 transition-transform duration-300">
+                    <div className="absolute inset-0 flex items-center justify-center hover:scale-125 transition-transform duration-300">
                         <Image
                             src={path}
                             alt={title}
@@ -36,14 +50,16 @@ export const CircleInfo = ({
                     </div>
                 )}
             </div>
-            {click !== null && (
-                <CircleModal
-                    info={info}
-                    setClick={setClick}
-                    title={title}
-                    path={path}
-                />
-            )}
-        </div>
+            <AnimatePresence>
+                {click !== null && (
+                    <CircleModal
+                        info={info}
+                        setClick={setClick}
+                        title={title}
+                        path={path}
+                    />
+                )}
+            </AnimatePresence>
+        </motion.div>
     );
 };
