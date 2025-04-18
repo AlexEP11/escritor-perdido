@@ -3,11 +3,19 @@ import Link from "next/link";
 
 interface Props {
     scrolled?: boolean;
+    footer?: boolean;
 }
 
-export const NavLinks = ({ scrolled = false }: Props) => {
+export const NavLinks = ({ scrolled = false, footer = false }: Props) => {
     return (
-        <nav className="hidden sm:flex justify-evenly items-center gap-10  ">
+        <nav
+            className={`sm:flex 
+                ${
+                    footer
+                        ? "flex justify-center items-center flex-col gap-0"
+                        : "hidden flex-row justify-evenly items-center gap-10"
+                } `}
+        >
             {navItems.map((item) => (
                 <Link
                     key={item.path}

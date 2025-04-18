@@ -1,8 +1,9 @@
 import { circlesInfo } from "@/data/circlesInfo";
 import Image from "next/image";
 import { CircleInfo } from "./CircleInfo";
-import { Arrow } from "./Arrow";
+import { ArrowNormal } from "./ArrowNormal";
 import React from "react";
+import { ArrowFlip } from "./ArrowFlip";
 
 export const ProcessCreationSection = () => {
     const renderElement = (
@@ -29,12 +30,10 @@ export const ProcessCreationSection = () => {
                         path={data.path}
                         info={data.info}
                     />
+                ) : direction === "normal" ? (
+                    <ArrowNormal style={data.class} color={data.color} />
                 ) : (
-                    <Arrow
-                        direction={direction!}
-                        style={data.class}
-                        color={data.color}
-                    />
+                    <ArrowFlip style={data.class} color={data.color} />
                 )}
             </div>
         );
@@ -81,8 +80,7 @@ export const ProcessCreationSection = () => {
 
                 {/* Cuarta fila */}
                 <div className="col-span-1 hidden lg:block">
-                    <Arrow
-                        direction="normal"
+                    <ArrowNormal
                         style={circlesInfo[7].class}
                         color={circlesInfo[7].color}
                     />

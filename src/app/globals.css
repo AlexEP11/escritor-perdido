@@ -19,22 +19,22 @@
         line-height: 2.1;
     }
 
-    h1.title-cabin {
+    .title-cabin {
         font-family: var(--font-cabin-sketch);
         font-weight: 700;
     }
 
-    h2.title-rubik {
+    .title-rubik {
         font-family: var(--font-rubik-doodle);
         font-weight: 400;
     }
 
-    h2.title-chelsea {
+    .title-chelsea {
         font-family: var(--font-chelsea-market);
         font-weight: 400;
     }
 
-    h3.title-rubik {
+    .title-rubik {
         font-family: var(--font-rubik-doodle);
         font-weight: 400;
     }
