@@ -5,7 +5,6 @@ import {
     Rubik_Doodle_Shadow,
 } from "next/font/google";
 import type { Metadata, Viewport } from "next";
-import { Footer, Header } from "@/components";
 import "./globals.css";
 
 const montserratAlt = Montserrat_Alternates({
@@ -55,6 +54,7 @@ export const metadata: Metadata = {
         "actividades literarias",
     ],
     category: "educación",
+    // TODO: Poner openGraph cuando haya dominio
     robots: {
         index: true, // Permite a los buscadores indexar esta página
         follow: true, // Permite a los buscadores seguir los enlaces de esta página
@@ -88,9 +88,7 @@ export default function RootLayout({
                   antialiased
                 `}
             >
-                <Header />
                 {children}
-                <Footer />
             </body>
         </html>
     );
