@@ -2,11 +2,12 @@ import Image from "next/image";
 import { LiteraryCreationSection, WeAreSection } from "./components";
 import { ProcessCreationSection } from "./components/ProcessCreationSection";
 import { Footer, Header } from "@/components";
+import { imagesHome } from "@/data/images";
 
 export default function Home() {
     return (
         <>
-            <Header />
+            <Header title="En busca del escritor perdido" images={imagesHome} />
             <WeAreSection />
             <Image
                 src="/waves.svg"

@@ -2,13 +2,14 @@ import Image from "next/image";
 
 interface Props {
     scrolled?: boolean;
+    onlyNav?: boolean;
 }
 
-export const Logo = ({ scrolled = false }: Props) => {
+export const Logo = ({ scrolled = false, onlyNav = false }: Props) => {
     return (
         <div
             className={`bg-white rounded-b-lg p-1 ${
-                scrolled ? "shadow-none" : "shadow-sm"
+                scrolled || onlyNav ? "shadow-none" : "shadow-sm"
             }  max-w-[160px]`}
         >
             <Image
