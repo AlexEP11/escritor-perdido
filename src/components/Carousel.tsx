@@ -2,16 +2,17 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { imagesCarousel } from "@/data/images";
 
-export const Carousel = () => {
+interface Props {
+    images: string[];
+}
+
+export const Carousel = ({ images = [] }: Props) => {
     const [current, setCurrent] = useState(0);
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setCurrent((prev) =>
-                prev === imagesCarousel.length - 1 ? 0 : prev + 1
-            );
+            setCurrent((prev) => (prev === images.length - 1 ? 0 : prev + 1));
         }, 4000);
 
         return () => clearInterval(interval);
@@ -24,7 +25,7 @@ export const Carousel = () => {
                     className="flex transition-transform duration-1000 ease-in-out h-full"
                     style={{ transform: `translateX(-${current * 100}%)` }}
                 >
-                    {imagesCarousel.map((src, index) => (
+                    {images.map((src, index) => (
                         <div key={index} className="min-w-full h-full relative">
                             <Image
                                 src={src}
