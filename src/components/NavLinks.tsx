@@ -4,9 +4,14 @@ import Link from "next/link";
 interface Props {
     scrolled?: boolean;
     footer?: boolean;
+    onlyNav?: boolean;
 }
 
-export const NavLinks = ({ scrolled = false, footer = false }: Props) => {
+export const NavLinks = ({
+    scrolled = false,
+    footer = false,
+    onlyNav = false,
+}: Props) => {
     return (
         <nav
             className={`sm:flex 
@@ -21,7 +26,7 @@ export const NavLinks = ({ scrolled = false, footer = false }: Props) => {
                     key={item.path}
                     href={item.path}
                     className={`group relative ${
-                        scrolled ? "text-black" : "text-white"
+                        scrolled || onlyNav ? "text-black" : "text-white"
                     } font-semibold px-5 py-2 transition-all duration-300`}
                 >
                     {item.title}

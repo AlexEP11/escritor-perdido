@@ -5,7 +5,11 @@ import { DrawerList } from "./DrawerList";
 import { Logo } from "./Logo";
 import { NavLinks } from "./NavLinks";
 
-export const Navbar = () => {
+interface Props {
+    onlyNav?: boolean;
+}
+
+export const Navbar = ({ onlyNav = false }: Props) => {
     const [scrolled, setScrolled] = useState(false);
 
     // * UseEffect para detectar scroll
@@ -26,12 +30,12 @@ export const Navbar = () => {
     return (
         <div
             className={`fixed top-0 left-0 w-full z-70 transition-colors duration-300 ${
-                scrolled ? "bg-white shadow-md" : "bg-transparent"
-            }`}
+                scrolled || onlyNav ? "bg-white shadow-md" : "bg-transparent"
+            } ${onlyNav && "shadow-md"}`}
         >
             <div className="xl:max-w-[1440px] mx-auto flex items-center justify-between  ">
-                <Logo scrolled={scrolled} />
-                <NavLinks scrolled={scrolled} />
+                <Logo scrolled={scrolled} onlyNav={onlyNav} />
+                <NavLinks scrolled={scrolled} onlyNav={onlyNav} />
                 <div className="sm:hidden flex">
                     <DrawerList scrolled={scrolled} />
                 </div>

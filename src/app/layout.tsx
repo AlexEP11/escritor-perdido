@@ -86,6 +86,7 @@ export default function RootLayout({
                   ${chelseaMarket.variable}
                   ${rubikDoodle.variable}
                   antialiased
+                  min-h-screen flex flex-col
                 `}
             >
                 {children}
