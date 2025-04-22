@@ -16,7 +16,7 @@ export const Carousel = ({ images = [] }: Props) => {
         }, 4000);
 
         return () => clearInterval(interval);
-    }, []);
+    }, [images.length]);
     return (
         <>
             <div className="absolute inset-0 bg-black/40 z-5" />
