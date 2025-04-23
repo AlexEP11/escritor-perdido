@@ -1,10 +1,27 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { NavLinks } from "./NavLinks";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 
 export const Footer = () => {
+    const ref = useRef(null);
+
+    const isInView = useInView(ref, {
+        once: true,
+        margin: "0px 0px -100px 0px",
+    });
+
     return (
-        <footer className="lg:h-[470px] h-full bg-morado mt-16 text-black">
+        <motion.footer
+            ref={ref}
+            initial={{ opacity: 0, y: 80 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="lg:h-[470px] h-full bg-morado mt-16 text-black"
+        >
             <div className="flex flex-col justify-center lg:flex-row items-center lg:justify-evenly px-10">
                 {/* Logo */}
                 <div className="flex items-center justify-center">
@@ -26,6 +43,7 @@ export const Footer = () => {
                             href="https://www.instagram.com/enbuscadelescritor/?hl=es"
                             target="_blank"
                             rel="noopener noreferrer"
+                            prefetch={false}
                         >
                             <Image
                                 src="/instagram.png"
@@ -39,6 +57,7 @@ export const Footer = () => {
                             href="https://www.facebook.com"
                             target="_blank"
                             rel="noopener noreferrer"
+                            prefetch={false}
                         >
                             <Image
                                 src="/facebook.png"
@@ -73,6 +92,6 @@ export const Footer = () => {
                     </div>
                 </div>
             </div>
-        </footer>
+        </motion.footer>
     );
 };

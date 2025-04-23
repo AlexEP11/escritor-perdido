@@ -1,5 +1,9 @@
+"use client";
+
+import { motion, useInView } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { useRef } from "react";
 
 // TODO: Recbir los props de usuario, fecha, imagen, titulo y descripcion
 interface Props {
@@ -7,9 +11,22 @@ interface Props {
 }
 
 export const BlogCard = ({ id }: Props) => {
+    const ref = useRef(null);
+    const isInView = useInView(ref, {
+        once: true,
+        margin: "0px 0px -100px 0px",
+    });
+
     return (
         <Link href={`/blog/post/${id.toString()}`}>
-            <article className="flex flex-col overflow-hidden rounded-xl shadow-md bg-white max-w-sm hover:scale-110 hover:cursor-pointer hover:rotate-1 hover:shadow-xl transition-all duration-300">
+            <motion.article
+                ref={ref}
+                initial={{ opacity: 0, y: 30 }}
+                animate={isInView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.6, ease: "easeOut" }}
+                whileHover={{ scale: 1.05, rotate: 1 }}
+                className="flex flex-col overflow-hidden rounded-xl shadow-md bg-white max-w-sm hover:scale-110 hover:cursor-pointer hover:rotate-1 hover:shadow-xl transition-all duration-300"
+            >
                 <figure>
                     <Image
                         src="/image1.avif"
@@ -22,7 +39,7 @@ export const BlogCard = ({ id }: Props) => {
                         <h3 className="text-xl title-chelsea line-clamp-2 break-words">
                             Programación Matemática
                         </h3>
-                        <p className="text-gray-600 line-clamp-3 break-words ">
+                        <p className="text-gray-600 line-clamp-3 break-words">
                             Procesando matemáticas, una programación desde el
                             aula de Educación Infantil.
                         </p>
@@ -34,7 +51,7 @@ export const BlogCard = ({ id }: Props) => {
                         </div>
                     </figcaption>
                 </figure>
-            </article>
+            </motion.article>
         </Link>
     );
 };
