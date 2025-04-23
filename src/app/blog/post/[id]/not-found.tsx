@@ -8,7 +8,7 @@ export default function NotFoundPostPage() {
                 ¡Ups! Parece que no hay nada por aquí...
             </h1>
             <h2 className="text-lg md:text-xl font-bold text-gray-600 mt-10">
-                El artiuclo que estás buscando no existe o ha sido movido.
+                El artículo que estás buscando no existe o ha sido movido.
             </h2>
             <Image
                 src="/404-space.svg"

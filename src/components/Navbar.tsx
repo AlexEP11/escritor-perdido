@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { DrawerList } from "./DrawerList";
 import { Logo } from "./Logo";
 import { NavLinks } from "./NavLinks";
+import { motion } from "framer-motion";
 
 interface Props {
     onlyNav?: boolean;
@@ -28,7 +29,10 @@ export const Navbar = ({ onlyNav = false }: Props) => {
     }, []);
 
     return (
-        <div
+        <motion.div
+            initial={{ y: -50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
             className={`fixed top-0 left-0 w-full z-70 transition-colors duration-300 ${
                 scrolled || onlyNav ? "bg-white shadow-md" : "bg-transparent"
             } ${onlyNav && "shadow-md"}`}
@@ -40,6 +44,6 @@ export const Navbar = ({ onlyNav = false }: Props) => {
                     <DrawerList scrolled={scrolled} />
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 };
