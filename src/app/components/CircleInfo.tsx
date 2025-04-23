@@ -24,9 +24,10 @@ export const CircleInfo = ({
             initial={{ opacity: 0, scale: 0.8 }}
             animate={isInView ? { opacity: 1, scale: 1 } : {}}
             transition={{
-                duration: 0.5,
+                duration: 0.8,
                 type: "spring",
                 bounce: 0.4,
+                mass: 1.5,
             }}
             className="flex flex-col items-center"
         >

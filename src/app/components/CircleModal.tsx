@@ -32,10 +32,20 @@ export const CircleModal = ({ setClick, title, path, info }: Props) => {
                 >
                     ✖
                 </button>
-                <h3 className="text-2xl font-bold mb-10 text-center">
+                <motion.h3
+                    initial={{ x: -150 }}
+                    animate={{ x: 0 }}
+                    transition={{ duration: 0.8 }}
+                    className="text-2xl font-bold mb-10 text-center"
+                >
                     {title}
-                </h3>
-                <div className="flex flex-col sm:flex-row items-center justify-between gap-10">
+                </motion.h3>
+                <motion.div
+                    initial={{ y: -150 }}
+                    animate={{ y: 0 }}
+                    transition={{ duration: 0.8 }}
+                    className="flex flex-col sm:flex-row items-center justify-between gap-10"
+                >
                     <Image
                         src={path}
                         alt={title}
@@ -55,7 +65,7 @@ export const CircleModal = ({ setClick, title, path, info }: Props) => {
                             ))}
                         </ol>
                     </div>
-                </div>
+                </motion.div>
             </motion.div>
         </motion.div>
     );
