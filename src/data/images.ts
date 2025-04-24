@@ -2,6 +2,7 @@
 
 export const imagesHome = [
     "/image1.avif",
+    "/image6.avif",
     "/image2.avif",
     "/image3.avif",
     "/image4.avif",

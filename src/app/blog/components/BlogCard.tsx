@@ -45,9 +45,7 @@ export const BlogCard = ({ id }: Props) => {
                         </p>
                         <div className="flex justify-between text-sm text-gray-500">
                             <p className="font-bold">Fernando</p>
-                            <p className="font-semibold">
-                                {new Date().toLocaleDateString()}
-                            </p>
+                            <p className="font-semibold">Fecha</p>
                         </div>
                     </figcaption>
                 </figure>
