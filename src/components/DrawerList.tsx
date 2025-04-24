@@ -46,7 +46,14 @@ export const DrawerList = ({ scrolled }: Props) => {
                 {navItems.map((item) => (
                     <ListItem key={item.path} disablePadding>
                         <ListItemButton href={item.path}>
-                            <ListItemIcon>{item.icon}</ListItemIcon>
+                            <ListItemIcon>
+                                <Image
+                                    src={item.icon}
+                                    alt={`Icono de ${item.title}`}
+                                    width={20}
+                                    height={20}
+                                />
+                            </ListItemIcon>
                             <ListItemText primary={item.title} />
                         </ListItemButton>
                     </ListItem>

@@ -1,6 +1,6 @@
 import { Footer, Header } from "@/components";
 import { BlogCard } from "./components/BlogCard";
-import { imagesBlog } from "@/data/images";
+import { imagesBlog } from "@/data";
 
 export default function BlogPage() {
     // TODO: Hacer peticion fetch para obtener todas las entradas de blog en un array
