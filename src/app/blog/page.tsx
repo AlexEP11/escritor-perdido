@@ -13,7 +13,7 @@ export default function BlogPage() {
             />
 
             <h1 className="title-chelsea text-5xl uppercase mt-16 text-center">
-                Historias, talleres y momentos para recordar
+                Cada experiencia, un recuerdo{" "}
             </h1>
             <section className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 xl:max-w-[1440px] mt-20 mx-auto px-5 justify-items-center">
                 <BlogCard id={0} />

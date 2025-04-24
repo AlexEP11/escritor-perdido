@@ -48,7 +48,7 @@ export const ProcessCreationSection = () => {
                 height={100}
                 className="w-full h-16 sm:h-48 object-cover rotate-180 scale-x-[-1]"
             />
-            <h2 className="uppercase title-rubik sm:p-20 p-6 bg-amarillo text-center sm:text-5xl text-2xl">
+            <h2 className="uppercase title-chelsea sm:p-20 p-6 bg-amarillo text-center sm:text-5xl text-2xl">
                 Proceso de Literaturización y Creación Literaria
             </h2>
             <Image

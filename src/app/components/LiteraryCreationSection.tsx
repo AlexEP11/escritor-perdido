@@ -16,21 +16,32 @@ export const LiteraryCreationSection = () => {
                         className="object-contain"
                     />
                 </div>
-                <div className="col-span-2">
-                    <p className="text-justify">
-                        Nuestra estrategia, basada en el modelo pedagógico
-                        propuesto por la escritora Ethel Krauze en su ensayo
-                        “Literaturizar… para educar” (2012), publicado en la
-                        revista Tamoanchan, guía a los niños en un proceso
-                        estructurado de ocho pasos, en el que crean personajes,
+                <div className="col-span-2 text-justify">
+                    <p className="text-gray-800 leading-relaxed mb-6">
+                        Nuestra estrategia pedagógica, basada en el modelo de 8
+                        pasos propuesto por Ethel Krauze en el{" "}
+                        <span className="font-semibold text-indigo-700 ">
+                            Seminario de investigación didáctica &quot;Teoría y
+                            práctica de la creación literaria&quot;{" "}
+                        </span>
+                        (CIDHEM, 2012) - documentado en el libro
+                        <span className="italic text-indigo-800">
+                            {" "}
+                            Caminito de los cuentos I: Las hadas existen...
+                            déjame contarte{" "}
+                        </span>
+                        (Martínez Miramontes et al., 2014, p. 14) - guía a los
+                        niños en un proceso estructurado donde crean personajes,
                         construyen escenarios y resuelven conflictos a través de
                         la escritura.
                     </p>
-                    <p className="text-justify">
-                        Este enfoque convierte la alfabetización inicial en una
-                        experiencia consciente, creativa e innovadora, donde el
-                        niño no solo aprende a leer y escribir, sino que también
-                        comprende el poder de la palabra escrita.
+
+                    <p className="text-gray-800 leading-relaxed">
+                        Este enfoque innovador transforma la alfabetización
+                        inicial en una experiencia consciente y creativa, donde
+                        el niño no solo adquiere habilidades de lectoescritura,
+                        sino que descubre el poder transformador de la palabra
+                        escrita.
                     </p>
                 </div>
             </section>
