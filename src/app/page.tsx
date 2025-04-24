@@ -2,7 +2,7 @@ import Image from "next/image";
 import { LiteraryCreationSection, WeAreSection } from "./components";
 import { ProcessCreationSection } from "./components/ProcessCreationSection";
 import { Footer, Header } from "@/components";
-import { imagesHome } from "@/data/images";
+import { imagesHome } from "@/data";
 
 export default function Home() {
     return (

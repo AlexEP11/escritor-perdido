@@ -1,29 +1,22 @@
-import {
-    IoHomeOutline,
-    IoMailOutline,
-    IoNewspaperOutline,
-    IoPeopleOutline,
-} from "react-icons/io5";
-
 export const navItems = [
     {
         title: "Inicio",
         path: "/",
-        icon: <IoHomeOutline />,
+        icon: "/home.svg",
     },
     {
         title: "Blog",
         path: "/blog",
-        icon: <IoNewspaperOutline />,
+        icon: "/news.svg",
     },
     {
         title: "Sobre Nosotros",
         path: "/nosotros",
-        icon: <IoPeopleOutline />,
+        icon: "/team.svg",
     },
     {
         title: "Contacto",
         path: "/contacto",
-        icon: <IoMailOutline />,
+        icon: "/mail.svg",
     },
 ];
