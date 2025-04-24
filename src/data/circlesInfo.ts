@@ -1,6 +1,6 @@
 export const circlesInfo = [
     {
-        path: "/dragon.svg",
+        path: "/witch.svg",
         color: "#D8BEDC",
         title: "¿Quién es nuestro personaje?",
         class: "hidden lg:block",

@@ -50,7 +50,7 @@ export const Footer = () => {
                                 alt="Icono Instagram"
                                 width={40}
                                 height={180}
-                                className="hover:cursor-pointer hover:scale-125 hover:rotate-12 transition-all duration-300"
+                                className="hover:cursor-pointer hover:scale-125 hover:rotate-12 transition-all duration-300 h-auto"
                             />
                         </Link>
                         <Link
@@ -64,7 +64,7 @@ export const Footer = () => {
                                 alt="Icono Facebook"
                                 width={24}
                                 height={180}
-                                className="hover:cursor-pointer hover:scale-125 hover:rotate-12 transition-all duration-300"
+                                className="hover:cursor-pointer hover:scale-125 hover:rotate-12 transition-all duration-300 h-auto"
                             />
                         </Link>
                     </div>
@@ -88,6 +88,7 @@ export const Footer = () => {
                             allowFullScreen
                             loading="lazy"
                             referrerPolicy="no-referrer-when-downgrade"
+                            title="Mapa de Google Maps que indica la dirección de la ludoteca"
                         ></iframe>
                     </div>
                 </div>
