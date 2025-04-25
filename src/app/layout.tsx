@@ -88,6 +88,10 @@ export default function RootLayout({
                   antialiased
                   min-h-screen flex flex-col
                 `}
+                style={{
+                    backgroundImage:
+                        "url('https://www.transparenttextures.com/patterns/inspiration-geometry.png')",
+                }}
             >
                 {children}
             </body>
