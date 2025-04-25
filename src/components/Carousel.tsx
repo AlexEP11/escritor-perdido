@@ -5,9 +5,12 @@ import { useEffect, useState } from "react";
 
 interface Props {
     images: string[];
+    width?: string | number;
+    height?: string | number;
+    rounded?: string | number;
 }
 
-export const Carousel = ({ images = [] }: Props) => {
+export const Carousel = ({ images = [], width, height, rounded }: Props) => {
     const [current, setCurrent] = useState(0);
 
     useEffect(() => {
@@ -17,8 +20,16 @@ export const Carousel = ({ images = [] }: Props) => {
 
         return () => clearInterval(interval);
     }, [images.length]);
+
     return (
-        <>
+        <div
+            className="relative overflow-hidden"
+            style={{
+                width: width || "100%",
+                height: height || "100%",
+                borderRadius: rounded ?? undefined,
+            }}
+        >
             <div className="absolute inset-0 bg-black/40 z-5" />
             <div className="absolute top-0 left-0 w-full h-full">
                 <div
@@ -38,6 +49,6 @@ export const Carousel = ({ images = [] }: Props) => {
                     ))}
                 </div>
             </div>
-        </>
+        </div>
     );
 };
