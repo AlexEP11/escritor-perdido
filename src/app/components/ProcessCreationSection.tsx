@@ -1,9 +1,9 @@
-import { circlesInfo } from "@/data/circlesInfo";
 import Image from "next/image";
 import { CircleInfo } from "./CircleInfo";
 import { ArrowNormal } from "./ArrowNormal";
 import React from "react";
 import { ArrowFlip } from "./ArrowFlip";
+import { circlesInfo } from "@/data";
 
 export const ProcessCreationSection = () => {
     const renderElement = (

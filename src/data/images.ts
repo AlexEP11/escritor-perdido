@@ -14,4 +14,11 @@ export const imagesBlog = [
     "/imageBlog2.avif",
     "/imageBlog3.avif",
     "/imageBlog4.avif",
+    "/imageBlog5.avif",
+];
+
+export const imagesAboutUs = [
+    "/imageUs1.webp",
+    "/imageUs2.webp",
+    "/imageUs3.webp",
 ];
