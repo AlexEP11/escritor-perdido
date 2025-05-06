@@ -1,31 +1,31 @@
 export const AboutUsValues = [
     {
-        image: "/compromiso.webp",
+        image: "/nosotros/valores/compromiso.webp",
         title: "Compromiso",
         desciption:
             "Con la educación de calidad y el desarrollo integral de los niños",
         color: "bg-celeste",
     },
     {
-        image: "/corresponsabilidad.webp",
+        image: "/nosotros/valores/corresponsabilidad.webp",
         title: "Corresponsabilidad",
         desciption: "Trabajamos en equipo con familias y docentes.",
         color: "bg-amarillo",
     },
     {
-        image: "/amor.webp",
+        image: "/nosotros/valores/amor.webp",
         title: "Amor y vocación",
         desciption: "Creemos en una educación afectiva y motivadora.",
         color: "bg-lima",
     },
     {
-        image: "/innovacion.webp",
+        image: "/nosotros/valores/innovacion.webp",
         title: "Innovación",
         desciption: "Transformamos prácticas educativas con creatividad.",
         color: "bg-azul-bajo",
     },
     {
-        image: "/colaboracion.webp",
+        image: "/nosotros/valores/colaboracion.webp",
         title: "Colaboración",
         desciption: "Fomentamos redes de aprendizaje y crecimiento colectivo.",
         color: "bg-lavanda",

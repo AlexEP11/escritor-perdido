@@ -1,6 +1,6 @@
 export const circlesInfo = [
     {
-        path: "/witch.svg",
+        path: "/8-pasos/witch.svg",
         color: "#D8BEDC",
         title: "¿Quién es nuestro personaje?",
         class: "hidden lg:block",
@@ -15,7 +15,7 @@ export const circlesInfo = [
         },
     },
     {
-        path: "/castle.svg",
+        path: "/8-pasos/castle.svg",
         color: "#7AEDDA",
         title: "¿Dónde vive?",
         class: "hidden lg:block lg:rotate-45 ",
@@ -31,7 +31,7 @@ export const circlesInfo = [
         },
     },
     {
-        path: "/monster.svg",
+        path: "/8-pasos/monster.svg",
         color: "#BFFB94",
         title: "¿Qué acaba de pasarle?",
         class: "hidden lg:block lg:rotate-290 lg:scale-x-[-1]",
@@ -44,7 +44,7 @@ export const circlesInfo = [
         },
     },
     {
-        path: "/pirate.svg",
+        path: "/8-pasos/pirate.svg",
         color: "#90F7BB",
         title: "¿A qué se dedica?",
         class: "hidden lg:block lg:scale-x-[-1]",
@@ -60,7 +60,7 @@ export const circlesInfo = [
         },
     },
     {
-        path: "/batman.svg",
+        path: "/8-pasos/batman.svg",
         color: "#F9F871",
         title: "¿A quién le pide ayuda?",
         class: "hidden lg:block",
@@ -73,7 +73,7 @@ export const circlesInfo = [
         },
     },
     {
-        path: "/batman-signal.svg",
+        path: "/8-pasos/batman-signal.svg",
         color: "#A1D2E5",
         title: "¿Cómo pide ayuda?",
         class: "hidden lg:block lg:rotate-45 ",
@@ -87,7 +87,7 @@ export const circlesInfo = [
         },
     },
     {
-        path: "/help.svg",
+        path: "/8-pasos/help.svg",
         color: "#86E1E9",
         title: "¿Qué tipo de ayuda recibe?",
         class: "hidden lg:block lg:scale-x-[-1]",
@@ -101,7 +101,7 @@ export const circlesInfo = [
         },
     },
     {
-        path: "/success.svg",
+        path: "/8-pasos/success.svg",
         color: "#7AEDDA",
         title: "¿Qué hace nuestro personaje con esa ayuda?",
         class: "hidden",

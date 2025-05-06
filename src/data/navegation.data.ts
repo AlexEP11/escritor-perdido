@@ -2,21 +2,21 @@ export const navItems = [
     {
         title: "Inicio",
         path: "/",
-        icon: "/home.svg",
+        icon: "/navegacion/home.svg",
     },
     {
         title: "Blog",
         path: "/blog",
-        icon: "/news.svg",
+        icon: "/navegacion/news.svg",
     },
     {
         title: "Sobre Nosotros",
         path: "/nosotros",
-        icon: "/team.svg",
+        icon: "/navegacion/team.svg",
     },
     {
         title: "Contacto",
         path: "/contacto",
-        icon: "/mail.svg",
+        icon: "/navegacion/mail.svg",
     },
 ];

@@ -1,7 +1,11 @@
-export { navItems } from "./navegation";
-export { imagesBlog } from "./images";
-export { imagesHome } from "./images";
-export { imagesAboutUs } from "./images";
-export { circlesInfo } from "./circlesInfo";
-export { AboutUsValues } from "./aboutUsInfo";
-export { aboutUsNotes } from "./aboutUsInfo";
+// * Data - Imagenes -
+export * from "./images.data";
+
+// * Data - Circles -
+export * from "./circles-info.data";
+
+// * Data - About Us -
+export * from "./about-us.data";
+
+// * Data - Navigation -
+export * from "./navegation.data";
