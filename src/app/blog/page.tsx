@@ -1,5 +1,4 @@
-import { Footer, Header } from "@/components";
-import { BlogCard } from "./components/BlogCard";
+import { BlogCard, Footer, Header } from "@/components";
 import { imagesBlog } from "@/data";
 
 export default function BlogPage() {

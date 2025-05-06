@@ -39,7 +39,6 @@ export const metadata: Metadata = {
     title: "En Busca del Escritor Perdido | Inicio",
     description:
         "Descubre la ludoteca 'En Busca del Escritor Perdido', un espacio dedicado a fomentar la creatividad literaria a través de juegos y actividades interactivas.",
-    icons: "/logo-ico.ico",
     authors: [
         { name: "Dalila del Toro Rodríguez" },
         { name: "Diana Laura Moreno" },
