@@ -1,10 +1,10 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { DrawerList } from "./DrawerList";
-import { Logo } from "./Logo";
+import { DrawerList } from "../drawer-list/DrawerList";
 import { NavLinks } from "./NavLinks";
 import { motion } from "framer-motion";
+import { Logo } from "../logo/Logo";
 
 interface Props {
     onlyNav?: boolean;

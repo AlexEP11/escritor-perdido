@@ -35,7 +35,7 @@ export const DrawerList = ({ scrolled }: Props) => {
                 <ListItem disablePadding>
                     <div className="w-full flex justify-center ">
                         <Image
-                            src="/logo-horizontal.png"
+                            src="/logos/logo-horizontal.png"
                             alt="Logo"
                             width={170}
                             height={50}
@@ -73,7 +73,7 @@ export const DrawerList = ({ scrolled }: Props) => {
                 }  shadow-md focus:outline-none z-50 hover:cursor-pointer hover:shadow-xl hover:rotate-6 hover:scale-125 transition-all duration-300`}
             >
                 <Image
-                    src="/menu.svg"
+                    src="/navegacion/menu.svg"
                     alt="Icono de Menu"
                     width={25}
                     height={50}

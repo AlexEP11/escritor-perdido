@@ -1,9 +1,9 @@
 "use client";
 
-import { Navbar } from "./Navbar";
-import { Carousel } from "./Carousel";
-import Link from "next/link";
+import { Carousel } from "../carousel/Carousel";
 import { motion } from "framer-motion";
+import { Navbar } from "../nav/Navbar";
+import Link from "next/link";
 
 interface Props {
     title: string;

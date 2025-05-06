@@ -13,7 +13,7 @@ export const Logo = ({ scrolled = false, onlyNav = false }: Props) => {
             }  max-w-[160px]`}
         >
             <Image
-                src="/logo-vertical.png"
+                src="/logos/logo-vertical.png"
                 width={80}
                 height={80}
                 alt="Logo de En busca del Escritor Perdido"

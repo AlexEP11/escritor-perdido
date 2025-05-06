@@ -1,7 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 interface Props {
     images: string[];
@@ -30,7 +30,7 @@ export const Carousel = ({ images = [], width, height, rounded }: Props) => {
                 borderRadius: rounded ?? undefined,
             }}
         >
-            <div className="absolute inset-0 bg-black/40 z-5" />
+            <div className="absolute inset-0 bg-black/50 z-5" />
             <div className="absolute top-0 left-0 w-full h-full">
                 <div
                     className="flex transition-transform duration-1000 ease-in-out h-full"
@@ -42,8 +42,10 @@ export const Carousel = ({ images = [], width, height, rounded }: Props) => {
                                 src={src}
                                 alt={`Imagen ${index + 1}`}
                                 fill
-                                className="object-cover object-center"
+                                quality={80}
                                 priority
+                                className="object-cover object-center"
+                                sizes="100vw"
                             />
                         </div>
                     ))}

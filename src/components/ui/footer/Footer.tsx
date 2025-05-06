@@ -1,10 +1,10 @@
 "use client";
 
+import { motion, useInView } from "framer-motion";
+import { NavLinks } from "../nav/NavLinks";
+import { useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { NavLinks } from "./NavLinks";
-import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
 
 export const Footer = () => {
     const ref = useRef(null);
@@ -26,7 +26,7 @@ export const Footer = () => {
                 {/* Logo */}
                 <div className="flex items-center justify-center">
                     <Image
-                        src="/logo-vertical.png"
+                        src="/logos/logo-vertical.png"
                         alt="Logo Footer"
                         width={500}
                         height={180}
@@ -46,8 +46,9 @@ export const Footer = () => {
                             prefetch={false}
                         >
                             <Image
-                                src="/instagram.png"
+                                src="/footer/instagram.png"
                                 alt="Icono Instagram"
+                                title="Instagram"
                                 width={40}
                                 height={180}
                                 className="hover:cursor-pointer hover:scale-125 hover:rotate-12 transition-all duration-300 h-auto"
@@ -60,8 +61,9 @@ export const Footer = () => {
                             prefetch={false}
                         >
                             <Image
-                                src="/facebook.png"
+                                src="/footer/facebook.png"
                                 alt="Icono Facebook"
+                                title="Facebook"
                                 width={24}
                                 height={180}
                                 className="hover:cursor-pointer hover:scale-125 hover:rotate-12 transition-all duration-300 h-auto"
