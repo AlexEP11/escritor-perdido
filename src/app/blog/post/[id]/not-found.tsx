@@ -11,7 +11,7 @@ export default function NotFoundPostPage() {
                 El artículo que estás buscando no existe o ha sido movido.
             </h2>
             <Image
-                src="/404-space.svg"
+                src="/not-found/404-space.svg"
                 alt="Space 404 Not Found"
                 width={1000}
                 height={1000}

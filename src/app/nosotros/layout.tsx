@@ -4,7 +4,6 @@ export const metadata: Metadata = {
     title: "En Busca del Escritor Perdido | Sobre Nosotros",
     description:
         "Conoce la historia, misión y equipo detrás de 'En Busca del Escritor Perdido'. Una propuesta educativa innovadora que transforma la enseñanza de la lectoescritura y matemáticas en preescolar mediante cuentos, creatividad y acompañamiento docente.",
-    icons: "/logo-ico.ico",
     authors: [
         { name: "Dalila del Toro Rodríguez" },
         { name: "Diana Laura Moreno" },

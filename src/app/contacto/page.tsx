@@ -1,5 +1,5 @@
+import { ContactForm } from "@/components";
 import Image from "next/image";
-import { ContactForm } from "./components";
 
 export default function ContactPage() {
     return (
@@ -8,7 +8,7 @@ export default function ContactPage() {
                 <section className="flex flex-col-reverse lg:flex-row-reverse justify-between md:gap-20 items-center">
                     <ContactForm />
                     <Image
-                        src="/contact.png"
+                        src="/contacto/contact.png"
                         alt="Imagen de Contacto"
                         width={650}
                         height={500}

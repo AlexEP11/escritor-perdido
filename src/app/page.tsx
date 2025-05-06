@@ -1,8 +1,12 @@
-import Image from "next/image";
-import { LiteraryCreationSection, WeAreSection } from "./components";
-import { ProcessCreationSection } from "./components/ProcessCreationSection";
-import { Footer, Header } from "@/components";
+import {
+    Footer,
+    Header,
+    LiteraryCreationSection,
+    ProcessCreationSection,
+    WeAreSection,
+} from "@/components";
 import { imagesHome } from "@/data";
+import Image from "next/image";
 
 export default function Home() {
     return (
@@ -10,7 +14,7 @@ export default function Home() {
             <Header title="En busca del escritor perdido" images={imagesHome} />
             <WeAreSection />
             <Image
-                src="/waves.svg"
+                src="/waves/waves.svg"
                 alt="Wave decoration"
                 width={100}
                 height={100}

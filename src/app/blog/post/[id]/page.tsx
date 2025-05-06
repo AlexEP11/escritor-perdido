@@ -1,8 +1,8 @@
-import Image from "next/image";
 import { notFound } from "next/navigation";
+import Image from "next/image";
 
 interface Props {
-    params: { id: string };
+    params: Promise<{ id: string }>;
 }
 
 export default async function PostPage({ params }: Props) {
