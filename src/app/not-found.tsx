@@ -23,7 +23,7 @@ export default function NotFoundPage() {
                 La página que estás buscando no existe o ha sido movida.
             </h2>
             <Image
-                src="/404-cat.svg"
+                src="/not-found/404-cat.svg"
                 alt="Gato 404 Not Found"
                 width={800}
                 height={1000}

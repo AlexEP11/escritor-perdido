@@ -5,7 +5,6 @@ export const metadata: Metadata = {
     title: "En Busca del Escritor Perdido | Contacto",
     description:
         "Ponte en contacto con el equipo de 'En Busca del Escritor Perdido'. Resolvemos tus dudas, escuchamos tus comentarios y estamos listos para ayudarte a fomentar la creatividad literaria.",
-    icons: "/logo-ico.ico",
     authors: [
         { name: "Dalila del Toro Rodríguez" },
         { name: "Diana Laura Moreno" },

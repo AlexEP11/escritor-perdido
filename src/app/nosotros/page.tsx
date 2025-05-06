@@ -1,11 +1,12 @@
-import { Footer, Header } from "@/components";
-import { aboutUsNotes, imagesAboutUs } from "@/data";
 import {
+    Footer,
     FoundationSection,
+    Header,
     Notebook,
     OurHistorySection,
     ValuesSection,
-} from "./components";
+} from "@/components";
+import { aboutUsNotes, imagesAboutUs } from "@/data";
 import Image from "next/image";
 
 export default function AboutUsPage() {
@@ -18,7 +19,7 @@ export default function AboutUsPage() {
             />
             <OurHistorySection />
             <Image
-                src="/waves-purple.svg"
+                src="/waves/waves-purple.svg"
                 alt="Separador"
                 width={1000}
                 height={100}

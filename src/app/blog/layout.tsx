@@ -4,7 +4,6 @@ export const metadata: Metadata = {
     title: "En Busca del Escritor Perdido | Blog",
     description:
         "Descubre artículos, recursos y reflexiones sobre el mundo de la escritura creativa y la ludoteca literaria en 'En Busca del Escritor Perdido'. Un espacio dedicado a inspirar la creatividad literaria.",
-    icons: "/logo-ico.ico",
     authors: [
         { name: "Dalila del Toro Rodríguez" },
         { name: "Diana Laura Moreno" },
