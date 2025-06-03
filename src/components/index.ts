@@ -25,6 +25,9 @@ export * from "./blog/card-skeleton/CardSkeleton";
 // * Componentes - Contacto -
 export * from "./contacto/contact-form/ContactForm";
 
+// * Componentes - Galeria -
+export * from "./galeria/galeria-list/GaleriaList";
+
 // * Componentes - Nosotros .
 export * from "./nosotros/notebook/Notebook";
 export * from "./nosotros/section/FoundationSection";
