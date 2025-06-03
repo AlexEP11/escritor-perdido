@@ -23,7 +23,7 @@ export default function BlogPage() {
                 Cada experiencia, un recuerdo
             </h1>
             {isLoading ? (
-                <section className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 xl:max-w-[1440px] mt-20 mx-auto px-5 justify-items-center">
+                <section className="max-w-[1440px] grid grid-cols-1 lg:grid-cols-3 gap-10 mt-20 mx-auto px-5 justify-items-center">
                     <CardSkeleton amount={12} />
                 </section>
             ) : data?.results.length === 0 ? (
@@ -31,7 +31,7 @@ export default function BlogPage() {
                     Aún no hay publicaciones disponibles…
                 </p>
             ) : (
-                <section className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 xl:max-w-[1440px] mt-20 mx-auto px-5 justify-items-center">
+                <section className="max-w-[1440px] grid grid-cols-1 lg:grid-cols-3 gap-10 mt-20 mx-auto px-5 justify-items-center">
                     {data?.results.map((cardInfo, index) => (
                         <BlogCard key={index} cardInfo={cardInfo} />
                     ))}
