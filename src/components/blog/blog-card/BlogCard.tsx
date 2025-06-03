@@ -29,7 +29,7 @@ export const BlogCard = ({ cardInfo }: Props) => {
                 initial={{ opacity: 0 }}
                 animate={isInView ? { opacity: 1 } : {}}
                 transition={{ duration: 0.6, ease: "easeOut" }}
-                className="flex flex-col overflow-hidden rounded-xl shadow-md bg-white max-w-sm hover:scale-110 hover:cursor-pointer hover:rotate-1 hover:shadow-xl transition-all duration-300 min-w-sm"
+                className="flex flex-col overflow-hidden rounded-xl shadow-md bg-white max-w-sm hover:scale-110 hover:cursor-pointer hover:rotate-1 hover:shadow-xl transition-all duration-300 min-w-[350px] sm:min-w-sm"
             >
                 <figure>
                     <Image
