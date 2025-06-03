@@ -15,6 +15,12 @@
 }
 
 @layer base {
+    ul,
+    ol {
+        list-style: revert;
+        margin-left: 2.5rem;
+    }
+
     body {
         font-family: var(--font-montserrat-alt);
         line-height: 2.1;
