@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 export default function NotFoundPage() {
     return (
-        <main className="min-h-screen flex flex-col items-center justify-center bg-gray-100 text-center px-4">
+        <main className="min-h-screen flex flex-col items-center justify-center text-center px-4">
             <h1 className="text-3xl md:text-5xl font-bold md:mt-10 text-gray-800">
                 ¡Ups! Parece que no hay nada por aquí...
             </h1>
