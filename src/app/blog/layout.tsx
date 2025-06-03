@@ -1,3 +1,5 @@
+import { Footer, Header } from "@/components";
+import { imagesBlog } from "@/data";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -40,7 +42,13 @@ export default function BlogLayout({
 }) {
     return (
         <>
+            <Header
+                title="Historias, talleres y momentos para recordar"
+                button={false}
+                images={imagesBlog}
+            />
             <main className="flex-grow">{children}</main>
+            <Footer />
         </>
     );
 }

@@ -17,8 +17,8 @@ export const Footer = () => {
     return (
         <motion.footer
             ref={ref}
-            initial={{ opacity: 0, y: 80 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            initial={{ opacity: 0 }}
+            animate={isInView ? { opacity: 1 } : {}}
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="lg:h-[470px] h-full bg-morado mt-16 text-black"
         >
@@ -86,7 +86,7 @@ export const Footer = () => {
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d938.9928258247706!2d-103.46297233037598!3d19.71384586135318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842f86afd15a04df%3A0xc4a4a8d6c7df57c7!2sC.%20Federico%20del%20Toro%20460%2C%20Centro%2C%2049000%20Cdad.%20Guzm%C3%A1n%2C%20Jal.!5e0!3m2!1ses-419!2smx!4v1744992742679!5m2!1ses-419!2smx"
                             width="650"
                             height="350"
-                            className="rounded-xl max-w-xs sm:max-w-2xl md:max-w-xl lg:max-w-md 2xl:max-w-2xl "
+                            className="rounded-xl max-w-sm sm:max-w-2xl md:max-w-xl lg:max-w-md 2xl:max-w-2xl "
                             allowFullScreen
                             loading="lazy"
                             referrerPolicy="no-referrer-when-downgrade"
