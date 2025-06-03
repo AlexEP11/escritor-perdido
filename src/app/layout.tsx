@@ -6,6 +6,7 @@ import {
 } from "next/font/google";
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
+import Providers from "@/components/providers/Providers";
 
 const montserratAlt = Montserrat_Alternates({
     variable: "--font-montserrat-alt",
@@ -92,7 +93,7 @@ export default function RootLayout({
                         "url('https://www.transparenttextures.com/patterns/inspiration-geometry.png')",
                 }}
             >
-                {children}
+                <Providers>{children}</Providers>
             </body>
         </html>
     );
