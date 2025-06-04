@@ -66,7 +66,7 @@ export const DrawerList = ({ scrolled }: Props) => {
         <div>
             <button
                 onClick={toggleDrawer(true)}
-                className={`md:hidden text-black mr-5 rounded-lg p-2 ${
+                className={`lg:hidden text-black mr-5 rounded-lg p-2 ${
                     scrolled
                         ? "bg-gradient-to-br from-azul/50 to-azul-bajo/70  "
                         : "bg-white"

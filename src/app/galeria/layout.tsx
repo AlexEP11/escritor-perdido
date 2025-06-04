@@ -1,11 +1,10 @@
-import { Footer, Header } from "@/components";
-import { imagesBlog } from "@/data";
+import { Footer, Navbar } from "@/components";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "En Busca del Escritor Perdido | Blog",
+    title: "Galería Visual | En Busca del Escritor Perdido",
     description:
-        "Descubre artículos, recursos y reflexiones sobre el mundo de la escritura creativa y la ludoteca literaria en 'En Busca del Escritor Perdido'. Un espacio dedicado a inspirar la creatividad literaria.",
+        "Explora nuestra galería de imágenes con ilustraciones, eventos y momentos destacados del proyecto 'En Busca del Escritor Perdido'. Descubre el proceso creativo detrás de esta ludoteca literaria.",
     authors: [
         { name: "Dalila del Toro Rodríguez" },
         { name: "Diana Laura Moreno" },
@@ -13,12 +12,14 @@ export const metadata: Metadata = {
         { name: "Fernando Genaro Vizcaino Sanchez" },
     ],
     keywords: [
-        "ludoteca literaria",
-        "creatividad literaria",
+        "galería literaria",
+        "imágenes creativas",
+        "proceso creativo",
+        "eventos literarios",
+        "ludoteca visual",
+        "ilustraciones literarias",
         "escritura creativa",
-        "artículos literarios",
-        "recursos de escritura",
-        "inspiración literaria",
+        "actividades literarias",
     ],
     category: "educación",
 
@@ -35,19 +36,19 @@ export const metadata: Metadata = {
     },
 };
 
-export default function BlogLayout({
+export default function GaleriaLayout({
     children,
 }: {
     children: React.ReactNode;
 }) {
     return (
         <>
-            <Header
-                title="Historias, talleres y momentos para recordar"
-                button={false}
-                images={imagesBlog}
-            />
+            <header className="relative h-[70px] sm:h-[100px] w-full overflow-hidden">
+                <Navbar onlyNav />
+            </header>
+
             <main className="flex-grow">{children}</main>
+
             <Footer />
         </>
     );

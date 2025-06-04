@@ -1,11 +1,10 @@
-import { Footer, Header } from "@/components";
-import { imagesBlog } from "@/data";
 import { Metadata } from "next";
+import { Footer, Navbar } from "@/components";
 
 export const metadata: Metadata = {
-    title: "En Busca del Escritor Perdido | Blog",
+    title: "Avisos y Noticias | En Busca del Escritor Perdido",
     description:
-        "Descubre artículos, recursos y reflexiones sobre el mundo de la escritura creativa y la ludoteca literaria en 'En Busca del Escritor Perdido'. Un espacio dedicado a inspirar la creatividad literaria.",
+        "Mantente informado con los últimos avisos, noticias y actualizaciones del proyecto 'En Busca del Escritor Perdido'. Conoce eventos próximos, cambios importantes y novedades de esta ludoteca literaria.",
     authors: [
         { name: "Dalila del Toro Rodríguez" },
         { name: "Diana Laura Moreno" },
@@ -13,12 +12,14 @@ export const metadata: Metadata = {
         { name: "Fernando Genaro Vizcaino Sanchez" },
     ],
     keywords: [
-        "ludoteca literaria",
-        "creatividad literaria",
-        "escritura creativa",
-        "artículos literarios",
-        "recursos de escritura",
-        "inspiración literaria",
+        "avisos literarios",
+        "noticias culturales",
+        "eventos literarios",
+        "actualizaciones proyecto",
+        "anuncios educación",
+        "calendario actividades",
+        "comunicados escritores",
+        "novedades ludoteca",
     ],
     category: "educación",
 
@@ -35,19 +36,19 @@ export const metadata: Metadata = {
     },
 };
 
-export default function BlogLayout({
+export default function GaleriaLayout({
     children,
 }: {
     children: React.ReactNode;
 }) {
     return (
         <>
-            <Header
-                title="Historias, talleres y momentos para recordar"
-                button={false}
-                images={imagesBlog}
-            />
+            <header className="relative h-[70px] sm:h-[100px] w-full overflow-hidden">
+                <Navbar onlyNav />
+            </header>
+
             <main className="flex-grow">{children}</main>
+
             <Footer />
         </>
     );

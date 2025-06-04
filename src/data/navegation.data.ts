@@ -10,13 +10,23 @@ export const navItems = [
         icon: "/navegacion/news.svg",
     },
     {
-        title: "Sobre Nosotros",
-        path: "/nosotros",
-        icon: "/navegacion/team.svg",
+        title: "Galería",
+        path: "/galeria",
+        icon: "/navegacion/photo-star.svg",
+    },
+    {
+        title: "Avisos",
+        path: "/avisos",
+        icon: "/navegacion/timeline-event-plus.svg",
     },
     {
         title: "Contacto",
         path: "/contacto",
         icon: "/navegacion/mail.svg",
+    },
+    {
+        title: "Sobre Nosotros",
+        path: "/nosotros",
+        icon: "/navegacion/team.svg",
     },
 ];

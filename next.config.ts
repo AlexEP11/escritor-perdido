@@ -6,6 +6,12 @@ const nextConfig: NextConfig = {
     compress: true,
     images: {
         formats: ["image/avif", "image/webp"],
+        remotePatterns: [
+            {
+                protocol: "http",
+                hostname: `${process.env.NEXT_PUBLIC_SERVER}`,
+            },
+        ],
     },
 };
 
