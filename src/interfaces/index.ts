@@ -9,3 +9,6 @@ export type * from "./post.interfaces";
 
 // * Interfaces - Galeria -
 export type * from "./galeria.interfaces";
+
+// * Interfaces - Avisos -
+export type * from "./avisos.interfaces";
