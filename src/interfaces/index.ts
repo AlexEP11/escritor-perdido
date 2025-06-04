@@ -12,3 +12,6 @@ export type * from "./galeria.interfaces";
 
 // * Interfaces - Avisos -
 export type * from "./avisos.interfaces";
+
+// * Intrefaces - Contacto -
+export type * from "./contacto.interfaces";
