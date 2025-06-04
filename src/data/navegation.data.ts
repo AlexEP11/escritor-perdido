@@ -15,6 +15,11 @@ export const navItems = [
         icon: "/navegacion/photo-star.svg",
     },
     {
+        title: "Avisos",
+        path: "/avisos",
+        icon: "/navegacion/timeline-event-plus.svg",
+    },
+    {
         title: "Contacto",
         path: "/contacto",
         icon: "/navegacion/mail.svg",
