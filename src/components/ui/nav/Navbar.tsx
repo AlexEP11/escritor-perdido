@@ -39,8 +39,10 @@ export const Navbar = ({ onlyNav = false }: Props) => {
         >
             <div className="xl:max-w-[1440px] mx-auto flex items-center justify-between  ">
                 <Logo scrolled={scrolled} onlyNav={onlyNav} />
-                <NavLinks scrolled={scrolled} onlyNav={onlyNav} />
-                <div className="sm:hidden flex">
+                <div className="hidden lg:flex">
+                    <NavLinks scrolled={scrolled} onlyNav={onlyNav} />
+                </div>
+                <div className="lg:hidden flex">
                     <DrawerList scrolled={scrolled} />
                 </div>
             </div>
