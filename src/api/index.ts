@@ -9,3 +9,6 @@ export * from "./galeria/galeria.functions";
 
 // * Avisos - Funciones
 export * from "./avisos/avisos.functions";
+
+// * Contacto - Funciones
+export * from "./contacto/contacto.functions";
