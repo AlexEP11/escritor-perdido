@@ -9,7 +9,7 @@ const nextConfig: NextConfig = {
         remotePatterns: [
             {
                 protocol: "http",
-                hostname: "137.184.134.164",
+                hostname: `${process.env.NEXT_PUBLIC_SERVER}`,
             },
         ],
     },
