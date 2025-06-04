@@ -29,7 +29,6 @@ export default function GaleriaPage() {
         },
     });
 
-    console.log(data);
     const photos = data?.pages.flatMap((page) => page!.results) || [];
 
     return (

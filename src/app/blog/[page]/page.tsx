@@ -14,7 +14,6 @@ export default function BlogPage() {
         queryFn: () => getPostsPerPage(page),
     });
 
-    console.log(data);
     if (isError) redirect("/404");
 
     return (

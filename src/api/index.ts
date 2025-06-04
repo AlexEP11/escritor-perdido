@@ -6,3 +6,6 @@ export * from "./post/post.functions";
 
 // * Galeria - Funciones
 export * from "./galeria/galeria.functions";
+
+// * Avisos - Funciones
+export * from "./avisos/avisos.functions";
