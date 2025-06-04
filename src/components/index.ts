@@ -28,6 +28,9 @@ export * from "./contacto/contact-form/ContactForm";
 // * Componentes - Galeria -
 export * from "./galeria/galeria-list/GaleriaList";
 
+// * Components - Avisos -
+export * from "./avisos/time-line/TimeLine";
+
 // * Componentes - Nosotros .
 export * from "./nosotros/notebook/Notebook";
 export * from "./nosotros/section/FoundationSection";
