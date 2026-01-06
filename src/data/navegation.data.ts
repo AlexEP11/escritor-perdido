@@ -5,6 +5,11 @@ export const navItems = [
         icon: "/navegacion/home.svg",
     },
     {
+        title: "Cursos",
+        path: "https://cursos.enbuscadelescritorperdido.com",
+        icon: "/navegacion/school.svg",
+    },
+    {
         title: "Blog",
         path: "/blog",
         icon: "/navegacion/news.svg",
