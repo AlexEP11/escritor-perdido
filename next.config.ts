@@ -8,7 +8,7 @@ const nextConfig: NextConfig = {
         formats: ["image/avif", "image/webp"],
         remotePatterns: [
             {
-                protocol: "http",
+                protocol: "https",
                 hostname: `${process.env.NEXT_PUBLIC_SERVER}`,
             },
         ],
