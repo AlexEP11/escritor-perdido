@@ -17,7 +17,7 @@ export const NavLinks = ({
             className={`sm:flex 
                 ${
                     footer
-                        ? "flex justify-center items-center flex-col gap-0"
+                        ? "flex md:text-sm justify-center items-center flex-col gap-0"
                         : "hidden flex-row justify-evenly items-center gap-10"
                 } `}
         >
