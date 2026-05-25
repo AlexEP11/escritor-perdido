@@ -5,6 +5,7 @@ import { NavLinks } from "../nav/NavLinks";
 import { useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import TermsModal from "../terms/TermsModal";
 
 export const Footer = () => {
     const ref = useRef(null);
@@ -37,6 +38,7 @@ export const Footer = () => {
                 {/* Navegación + Redes */}
                 <div className="flex flex-col justify-center items-center gap-2 mt-4">
                     <NavLinks footer />
+                    <TermsModal />
                     <p className="mt-4 font-semibold">Redes sociales</p>
                     <div className="flex gap-10 mt-1 text-2xl">
                         <Link
