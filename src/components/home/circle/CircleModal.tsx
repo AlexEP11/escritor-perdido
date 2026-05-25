@@ -28,7 +28,7 @@ export const CircleModal = ({ setClick, title, path, info }: Props) => {
             >
                 <button
                     onClick={() => setClick(null)}
-                    className="absolute top-2 right-5 hover:cursor-pointer text-red-500 hover:text-red-600 transition-colors duration-150 text-2xl"
+                    className="absolute top-2 right-5 hover:cursor-pointer text-gray-400 hover:text-red-500 transition-colors duration-150 text-2xl"
                 >
                     ✖
                 </button>
